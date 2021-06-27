@@ -87,7 +87,7 @@ a {
 /* Here, we are working based on the concept of separating style from skin, 
 the first class will include skin stuff like padding and all */
 .badge {
-  border-radius: 20px;
+  border-radius: 20px; /*Absolute value, we don't want our radius to be dependent on the font size*/
   font-size: 2rem;
   font-weight: 600;
   padding: 0.5rem 2rem;
@@ -114,5 +114,34 @@ the first class will include skin stuff like padding and all */
   }
   .badge--small {
     font-size: 1.2rem;
+  }
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  color: var(--color-headings);
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2rem;
+}
+
+.list--tick {
+  list-style-image: url(icons/tick.svg);
+  padding-left: 3rem;
+}
+
+.list--tick .list__item {
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .list--tick .list__item {
+    padding-left: 0;
   }
 }
