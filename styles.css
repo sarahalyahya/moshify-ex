@@ -165,6 +165,15 @@ the first class will include skin stuff like padding and all */
   fill: var(--color-primary);
 }
 
+.icon--white{
+    fill: white; 
+}
+
+.icon--small{
+    width: 30px;
+    height: 30px;
+}
+
 .icon-container {
   background: #f3f9fa;
   width: 64px;
@@ -174,6 +183,10 @@ the first class will include skin stuff like padding and all */
   justify-content: center;
   align-items: center;
 }
+.icon-container--accent{
+    background:var(--color-accent);
+}
+
 
 /* Buttons */
 
@@ -442,4 +455,36 @@ the first class will include skin stuff like padding and all */
         grid-template-columns: repeat(3,1fr);
 
     }
+}
+
+/* Testimonials */
+.testimonial{
+    padding: 3rem; 
+}
+
+.testimonial__image{
+    position: relative; 
+}
+
+.testimonial__image > img{
+    width: 100%; 
+}
+
+.testimonial__image > .icon-container{
+    position: absolute; 
+    top: 3rem;
+    right: -32px;
+     
+}
+
+@media screen and (min-width: 768px){
+    .testimonial .quote, .testimonial .quote__author{
+        font-size: 2.4rem; 
+    }
+
+    .testimonial__quote{
+        margin-left: 6rem;
+    }
+
+    
 }
