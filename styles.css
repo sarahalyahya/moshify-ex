@@ -210,7 +210,7 @@ the first class will include skin stuff like padding and all */
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -270,6 +270,7 @@ the first class will include skin stuff like padding and all */
 @media screen and (min-width: 1024px) {
   .btn {
     font-size: 1.5rem;
+    padding: 2rem 4rem;
   }
 }
 
@@ -305,6 +306,7 @@ the first class will include skin stuff like padding and all */
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
