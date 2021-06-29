@@ -34,6 +34,7 @@ body {
   color: var(--color-body);
   line-height: 1.5;
   font-size: 2.4rem;
+  margin: 0;
 }
 
 h1,
@@ -867,4 +868,8 @@ the first class will include skin stuff like padding and all */
   .footer__heading {
     font-size: 1.6rem;
   }
+}
+
+.callout-signup {
+  transform: translateY(5rem);
 }
