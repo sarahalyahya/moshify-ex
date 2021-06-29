@@ -610,6 +610,7 @@ the first class will include skin stuff like padding and all */
 
 .block__header {
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .block__heading {
