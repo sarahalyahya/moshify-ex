@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
@@ -33,13 +35,13 @@
                 <p class="hero__tagline">Deploy your websites in less than 60 seconds</p>
                 <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
             </header>
-            <img class= "hero__image" src="images/banner.png" alt="">
+            <img data-aos="zoom-in" class= "hero__image" src="images/banner.png" alt="">
         </div>
     
     
     
     </section>
-    <section class="block container block-domain">
+    <section data-aos="fade-up"class="block container block-domain">
         <header class="block__header">
             <h2>Starting at $9 per month</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, consectetur?</p>
@@ -60,13 +62,76 @@
             <li>.xyz $10</li>
         </ul>
     </section>
+    <section data-aos="fade-up" class= "block container block-plans">
+        <div class="grid grid--1x3">
+            <div class="plan">
+                <div class="card card--secondary">
+                <header class="card__header">
+                    <h3 class="plan__name">Entry</h3>
+                    <span class="plan__price">$14</span>
+                    <span class="plan__billing-cycle">/month</span>
+                    <span class="badge badge--secondary badge--small"> 10% OFF</span>
+                    <span class="plan__description">Easy start on the cloud</span>
+                </header>
+                <div class="card__body"><ul class="list list--tick">
+                 <li class= "list__item">Unlimited Websites</li>
+                 <li class= "list__item">Unlimited Bandwidth</li>
+                 <li class= "list__item">100 GB SSD Storage</li>
+                 <li class= "list__item">3 GB RAM</li>
+             </ul>
+             <button class="btn btn--outline btn--block">Buy Now</button>
+                 </div>
+                 </div>
+            </div>
+            <div class="plan plan--popular">
+                <div class="card card--primary">
+                <header class="card__header">
+                    <h3 class="plan__name">Entry</h3>
+                    <span class="plan__price">$14</span>
+                    <span class="plan__billing-cycle">/month</span>
+                    <span class="badge badge--primary badge--small"> 10% OFF</span>
+                    <span class="plan__description">Easy start on the cloud</span>
+                </header>
+                <div class="card__body"><ul class="list list--tick">
+                 <li class= "list__item">Unlimited Websites</li>
+                 <li class= "list__item">Unlimited Bandwidth</li>
+                 <li class= "list__item">100 GB SSD Storage</li>
+                 <li class= "list__item">3 GB RAM</li>
+             </ul>
+             <button class="btn btn--outline btn--block">Buy Now</button>
+                 </div>
+                 </div>
+            </div>
+            <div class="plan">
+                <div class="card card--secondary">
+                <header class="card__header">
+                    <h3 class="plan__name">Entry</h3>
+                    <span class="plan__price">$14</span>
+                    <span class="plan__billing-cycle">/month</span>
+                    <span class="badge badge--secondary badge--small"> 10% OFF</span>
+                    <span class="plan__description">Easy start on the cloud</span>
+                </header>
+                <div class="card__body"><ul class="list list--tick">
+                 <li class= "list__item">Unlimited Websites</li>
+                 <li class= "list__item">Unlimited Bandwidth</li>
+                 <li class= "list__item">100 GB SSD Storage</li>
+                 <li class= "list__item">3 GB RAM</li>
+             </ul>
+             <button class="btn btn--outline btn--block">Buy Now</button>
+                 </div>
+                 </div>
+            </div>
+        
+        
+        </div>
+    </section> 
     <section class="block container">
         <header class="block__header">
             <h2>Host on the Cloud to Keep Growing</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, sint.</p>
         </header>
         <article class= "grid grid--1x2 feature">
-            <div class= "feature__content">
+            <div class= "feature__content" >
                 <span class="icon-container">
                     <svg class="icon icon--primary">
                         <use xlink:href="images/sprite.svg#easy"></use>
@@ -76,7 +141,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi incidunt odit, modi porro quod dignissimos dolorem, culpa autem sint error cumque nam quasi. Dolore, voluptatum!</p>
                 <a href="#" class="link-arrow">Learn More</a>
             </div>
-            <img class= "feature__image" src="images/easy.jpg" alt="">
+            <img class= "feature__image" src="images/easy.jpg" alt="" >
         </article>
         <article class= "grid grid--1x2 feature">
             <div class= "feature__content">
@@ -111,7 +176,7 @@
         </header>
         <div class="container grid grid--1x2">
             <img class="block-showcase__image" src="images/ipad.png" alt="">
-            <ul class= "list">
+            <ul class= "list" data-aos="fade-up">
                 <li>
                     <div class="media">
                         <div class="media__image">
@@ -160,8 +225,8 @@
             </ul>
         </div>
     
-    </section>
-    <section class="block">
+    </section> 
+    <section class="block" data-aos="zoom-in">
         <header class="block__header">
             <h2>What our Customers are Saying</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, voluptates.</p>
@@ -306,5 +371,10 @@
      </footer>
    
 <script src="main.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
 </body>
 </html>
