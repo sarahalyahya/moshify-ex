@@ -214,6 +214,7 @@ the first class will include skin stuff like padding and all */
   padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
+  max-width: 20reml;
   white-space: nowrap;
 }
 .btn .icon {
